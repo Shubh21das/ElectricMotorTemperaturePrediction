@@ -1,6 +1,6 @@
 # ElectricMotorTemperaturePrediction
 
 # Objective - 
-This project aims to develop an AI-based model for predicting the temperature of electric motors using real-time sensor data. The goal is to enhance motor safety, prevent overheating, and enable predictive maintenance through accurate temperature forecasting.
+This project aims to estimate temperature sequences inside Permanent Magnet Synchronous Motors from given input sequences, that is, currents, voltages, coolant and ambient temperatures, and torque as well as motor speed. All sensor data is recorded on a testbench.
 
 # Dataset - 
