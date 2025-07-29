@@ -7,7 +7,7 @@ The original dataset can be downloaded from: https://www.kaggle.com/datasets/wki
 
 # File structure
 
-The main.py file contains a general purpose Pipeline class for loading model weights, fitting, and evaluating. The utils module contains functions for loading and transforming data (data_utils.py), evaluating the models (eval_utils.py) and the configuration file config.py. The modeling module contains the neural network archictetures, and the explain model includes feature explainability functionalities. Training results, predictions, explanations and pre-trained models are saved in the out folder.
+The main.py file contains a general purpose Pipeline class for loading model weights, fitting, and evaluating. The utils module contains functions for loading and transforming data , evaluating the models  and the configuration file config.py. The modeling module contains the neural network archictetures, and the explain model includes feature explainability functionalities. Training results, predictions, explanations and pre-trained models are saved in the out folder.
 
 # Training a model
 
