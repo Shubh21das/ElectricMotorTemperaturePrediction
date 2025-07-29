@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manual Input Prediction</title>
+</head>
+<body>
+    <h2>Enter the values manually</h2>
+    <form action="/predict" method="post">
+        <label>Ambient:</label><input type="text" name="ambient"><br>
+        <label>Coolant:</label><input type="text" name="coolant"><br>
+        <label>u_d:</label><input type="text" name="u_d"><br>
+        <label>u_q:</label><input type="text" name="u_q"><br>
+        <label>i_d:</label><input type="text" name="i_d"><br>
+        <label>i_q:</label><input type="text" name="i_q"><br>
+        <label>Motor Speed:</label><input type="text" name="motor_speed"><br>
+        <label>Torque:</label><input type="text" name="torque"><br>
+        <label>Stator Yoke:</label><input type="text" name="stator_yoke"><br>
+        <label>Stator Tooth:</label><input type="text" name="stator_tooth"><br>
+        <label>Stator Winding:</label><input type="text" name="stator_winding"><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
