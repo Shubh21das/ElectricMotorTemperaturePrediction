@@ -36,8 +36,12 @@ Flask
 
 HTML/CSS
 
-# Model
+# Dataset and Model
 A regression model trained on the Electric Motor Temperature Dataset from Kaggle to predict motor PM temperature.
+
+Download the dataset from below link.
+
+Link: https://www.kaggle.com/wkirgsn/electric-motor-temperature
 
 # How to Run
 Clone this repository.
