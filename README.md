@@ -1,30 +1,53 @@
 # Description
 
-Temperature prediction for a permanent magnet synchronous motor (PMSM). Archicteture and network parameters based on: https://ieeexplore.ieee.org/abstract/document/9296842. 
+# Electric Motor Temperature Prediction using Machine Learning and Flask
+This project predicts the Permanent Magnet (PM) temperature of an electric motor based on sensor inputs such as voltage, current, motor speed, and ambient conditions. A regression model is trained using a real-world dataset, and the prediction interface is built using Flask and HTML.
 
+# Features
+Predicts PM temperature based on 7 key input parameters.
 
-The original dataset can be downloaded from: https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature
+Interactive web interface built using Flask.
 
-# File structure
+Pre-trained ML model integrated using joblib.
 
-The main.py file contains a general purpose Pipeline class for loading model weights, fitting, and evaluating. The utils module contains functions for loading and transforming data , evaluating the models  and the configuration file config.py. The modeling module contains the neural network archictetures, and the explain model includes feature explainability functionalities. Training results, predictions, explanations and pre-trained models are saved in the out folder.
+Lightweight, clean, and easy to deploy.
 
-# Training a model
+# Input Features
+Voltage Uq
 
-Models can be trained and evaluated with the Pipeline class. For example:
+Coolant Temperature
 
-```
-N_FEATURES = 10
-p = Pipeline(rnn_rotor_model(N_FEATURES), rnn_stator_cfg)
-p.compile_and_fit(max_epochs=200)
-p.get_model_metrics()
-```
+Voltage Ud
 
-In order to load a pretrained model, we can do as follows:
+Motor Speed
 
-```
-N_FEATURES = 10
-p = Pipeline(rnn_rotor_model(N_FEATURES), rnn_stator_cfg)
-p.load_model_weights('out/models/RNN_rotor_10.h5')
-p.get_model_metrics()
-```
+Current Id
+
+Current Iq
+
+Ambient Temperature
+
+# Tech Stack
+Python
+
+Scikit-learn
+
+Flask
+
+HTML/CSS
+
+# Model
+A regression model trained on the Electric Motor Temperature Dataset from Kaggle to predict motor PM temperature.
+
+# How to Run
+Clone this repository.
+
+# Install dependencies:
+
+pip install -r requirements.txt
+
+# Run the Flask app:
+
+python app.py
+
+Open your browser at http://127.0.0.1:5000/
